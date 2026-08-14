@@ -23,35 +23,35 @@ Es un repositorio abierto y cualquiera puede poner un PR para mejorarlo, corregi
 ## Índice
 
 1. Introducción a la ciberseguridad:
-    1. [¿De qué va eso de Ethical Hacker?](./resources/1_intro/1.1_ethicalHacker.md)
-    2. [Definiciones y términos básicos](./resources/1_intro/1.2_hackerdefs.md)
+    1. [¿De qué va eso de Ethical Hacker?](./resources/0.1_intro/1.1_ethicalHacker.md)
+    2. [Definiciones y términos básicos](./resources/0.1_intro/1.2_hackerdefs.md)
 2. Metodologías de seguridad:
-    1. [Metodologías de seguridad](./resources/2_metodolgias/2.1_metodologias.md)
+    1. [Metodologías de seguridad](./resources/0.2_metodologias/2.1_metodologias.md)
 3. Conceptos básicos de redes:
-    1. [Modelos de comunicación](./resources/3_redes/3.1_modelos.md)
-    2. [Topologías](./resources/3_redes/3.2_topologias.md)
+    1. [Modelos de comunicación](./resources/0.3_redes/3.1_modelos.md)
+    2. [Topologías](./resources/0.3_redes/3.2_topologias.md)
 4. Conceptos básicos de seguridad:
-    1. [La tríada](./resources/4_seguridad/4.1_triada.md)
-    2. [Defense in Depth y Defense in Breadth](./resources/4_seguridad/4.2_defense.md)
+    1. [La tríada](./resources/0.4_seguridad/4.1_triada.md)
+    2. [Defense in Depth y Defense in Breadth](./resources/0.4_seguridad/4.2_defense.md)
 5. Dispositivos de seguridad:
-    1. [Principales dispositivos de seguridad](./resources/5_dispositivoseguridad/5.1_dispositivosDeSeguridad.md)
+    1. [Principales dispositivos de seguridad](./resources/0.5_dispositivoseguridad/5.1_dispositivosDeSeguridad.md)
 6. Las distros:
-    1. [Principales distros de Hacking Ético y distros vulnerables](./resources/6_distros/6.1_distros.md)
+    1. [Principales distros de Hacking Ético y distros vulnerables](./resources/0.6_distros/6.1_distros.md)
 7. ¿Cómo ser anónimo en Internet?
-    1. [Conceptos básicos](./resources/7_anonimato/7.1_conceptos.md)
-    2. [Instalando TOR en Kali](./resources/7_anonimato/7.2_instalarTor.md)
-    3. [Proxies](./resources/7_anonimato/7.3_proxies.md)
-    4. [Cambiando la MAC](./resources/7_anonimato/7.4_mac.md)
-    5. [VPS que aceptan pago con bitcoins](./resources/7_anonimato/7.5_vps.md)
+    1. [Conceptos básicos](./resources/0.7_anonimato/7.1_conceptos.md)
+    2. [Instalando TOR en Kali](./resources/0.7_anonimato/7.2_instalarTor.md)
+    3. [Proxies](./resources/0.7_anonimato/7.3_proxies.md)
+    4. [Cambiando la MAC](./resources/0.7_anonimato/7.4_mac.md)
+    5. [VPS que aceptan pago con bitcoins](./resources/0.7_anonimato/7.5_vps.md)
 8. Obteniendo información
-    1. [Whois y host](./resources/8_obteniendoInfo/8.1_whois.md)
-    2. [Social Networking](./resources/8_obteniendoInfo/8.2_socialnetworking.md)
-    3. [Google Hacking](./resources/8_obteniendoInfo/8.3_googleHacking.md)
+    1. [Whois y host](./resources/0.8_obteniendoInfo/8.1_whois.md)
+    2. [Social Networking](./resources/0.8_obteniendoInfo/8.2_socialnetworking.md)
+    3. [Google Hacking](./resources/0.8_obteniendoInfo/8.3_googleHacking.md)
 9. Escaneando redes:
-    1. [Encontrar máquinas en una red](./resources/9_escaneoRedes/9.1_pingsweeps.md)
-    2. [Escaneo de puertos](./resources/9_escaneoRedes/9.2_portScanning.md)
-    3. [Escaneo de vulnerabilidades](./resources/9_escaneoRedes/9.3_vulnerabilidades.md)
-    4. [Técnicas de evasión](./resources/9_escaneoRedes/9.4_evasion.md)
+    1. [Encontrar máquinas en una red](./resources/0.9_escaneoRedes/9.1_pingsweeps.md)
+    2. [Escaneo de puertos](./resources/0.9_escaneoRedes/9.2_portScanning.md)
+    3. [Escaneo de vulnerabilidades](./resources/0.9_escaneoRedes/9.3_vulnerabilidades.md)
+    4. [Técnicas de evasión](./resources/0.9_escaneoRedes/9.4_evasion.md)
 10. Enumeración web:
     1. [Enumeración web](./resources/10_enumeracionweb/10.1_enumeracion.md)
 11. Hacking de sistemas
