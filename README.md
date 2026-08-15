@@ -12,7 +12,7 @@ Es un repositorio abierto y cualquiera puede poner un PR para mejorarlo, corregi
 
 ℹ️ Si hay algún término que no conoces hay un [Glosario](./2º_Ciberseguridad/18_glosario.md) con 100 terminos que se utilizan en estos apuntes donde seguramente lo puedes encontrar. Si no está ahí puedes abrir una issue en el repositorio para que lo añada.
 
-❗ El repositorio está en incompleto todavía. Los puntos que no tienen link es debido a que todavía no he añadido los apuntes que tengo.
+❗ El repositorio está en incompleto todavía, estoy haciendo un roadmap con las bases necesarias para poder tener una buena base, si quieres aportar a mejorarlo te invito que lo hagas sin miedo.
 
 🛣️ Roadmap:
 
