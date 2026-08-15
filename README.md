@@ -8,17 +8,18 @@
 
 👋👋 ¡Hola! Estos son mis apuntes de ciberseguridad. He intentado estructurarlos de la mejor manera posible para que sean de utilidad a todas las personas que quieren iniciarse en la ciberseguridad.
 
-Es un repositorio abierto y cualquiera puede poner un PR para mejorarlo, corregir faltas de ortografía o añadir contenido que pueda ser útil. Al final, de eso se trata de que entre todos compartamos conocimiento y nos ayudemos los unos a los otros. Espero que les guste ❤️.
+Es un repositorio abierto y cualquiera puede poner un PR para mejorarlo, corregir faltas de ortografía o añadir contenido que pueda ser útil. Al final, de eso se trata de que entre todos compartamos conocimiento y nos ayudemos los unos a los otros. Espero que os guste ❤️.
 
-ℹ️ Si hay algún término que no conoces hay un punto que se llama [Terminología](./resources/terminologia.md) donde seguramente lo puedes encontrar. Si no está ahí puedes abrir una issue en el repositorio para que lo añada.
+ℹ️ Si hay algún término que no conoces hay un [Glosario](./resources/18_glosario.md) con 100 terminos que se utilizan en estos apuntes donde seguramente lo puedes encontrar. Si no está ahí puedes abrir una issue en el repositorio para que lo añada.
 
 ❗ El repositorio está en incompleto todavía. Los puntos que no tienen link es debido a que todavía no he añadido los apuntes que tengo.
 
 🛣️ Roadmap:
 
-- [ ] Completar los puntos que faltan
-- [ ] Añadir preguntas de tipo test por cada sección
-- [ ] Añadir sección de respuestas a los tests
+- [ ] Completar con más contenido en cada puntos.
+- [ ] Añadir preguntas de tipo test por cada sección.
+- [ ] Añadir sección de respuestas a los tests.
+- [ ] Añadir un roadmap de el camino de aprendizaje en Ciberseguridad.
 
 ## Índice
 
@@ -71,6 +72,8 @@ Es un repositorio abierto y cualquiera puede poner un PR para mejorarlo, corregi
     1. [Redes Wi-Fi y como funcionan](./resources/15_redesInalambricas/15.1_wifi.md)
     2. [Cifrado Wi-Fi](./resources/15_redesInalambricas/15.2_cifradoWifi.md)
     3. [Ataques Wi-Fi](./resources/15_redesInalambricas/15.3_ataques.md)
-16. Ataques de aplicaciones web
-17. Criptografía
-18. [Terminología importante](./resources/18_terminologia.md)
+16. Ataques de aplicaciones web:
+    1. [Introducción a los ataques de aplicaciones web](./resources/16_ataquesAppsweb/16.1_atauquesAppsweb.md)
+17. Criptografía:
+    1. [Introducción a la Criptografía](./resources/17_criptografia/17.1_introcriptografia.md)
+18. [Glosario](./resources/18_glosario.md)
