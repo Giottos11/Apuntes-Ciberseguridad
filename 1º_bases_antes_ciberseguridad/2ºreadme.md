@@ -13,7 +13,7 @@ Esta carpeta reúne una hoja de ruta para construir una base sólida antes de es
         2. [Conocimientos](./00-roadmap/2-puntuaciones.md)
 
     1. Fundamentos de la informatica:
-        1. [Introducción a la informatica](./01-fundamentos-informatica/0-introduccion.md)
+        1. [Introducción a la informatica](./01-fundamentos-informatica/01-introduccion.md)
 
     2. Programación:
         1. Intro.
