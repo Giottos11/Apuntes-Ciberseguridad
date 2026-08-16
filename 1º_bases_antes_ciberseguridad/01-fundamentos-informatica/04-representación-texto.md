@@ -1,4 +1,4 @@
-## 3. Representación de texto
+## 4. Representación de texto
 
 Los ordenadores necesitan transformar caracteres como:
 

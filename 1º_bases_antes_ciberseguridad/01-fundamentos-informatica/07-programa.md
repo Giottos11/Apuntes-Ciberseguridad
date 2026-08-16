@@ -1,4 +1,4 @@
-# 6. Programa, proceso e hilo
+# 7. Programa, proceso e hilo
 
 Estos conceptos suelen confundirse.
 

@@ -1,4 +1,4 @@
-## 2. Sistemas de numeración
+## 3. Sistemas de numeración
 
 ### Decimal
 

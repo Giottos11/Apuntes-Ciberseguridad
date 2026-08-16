@@ -1,4 +1,4 @@
-# 4. Hardware
+# 5. Hardware
 
 El hardware está formado por los componentes físicos del ordenador.
 
@@ -6,7 +6,7 @@ Para ciberseguridad interesa comprender **qué hace cada componente y cómo inte
 
 ---
 
-## 4.1. CPU
+## 5.1. CPU
 
 La **CPU (Central Processing Unit)** es el componente encargado de ejecutar instrucciones.
 
@@ -40,7 +40,7 @@ Conceptos relacionados:
 
 ---
 
-## 4.2. Registros
+## 5.2. Registros
 
 Los **registros** son pequeñas áreas de almacenamiento extremadamente rápidas situadas dentro de la CPU.
 
@@ -55,7 +55,7 @@ Serán especialmente importantes cuando posteriormente se estudie **ensamblador 
 
 ---
 
-## 4.3. RAM
+## 5.3. RAM
 
 La **RAM (Random Access Memory)** es la memoria principal utilizada por los programas mientras están ejecutándose.
 
@@ -73,7 +73,7 @@ La RAM es mucho más rápida que el almacenamiento permanente, pero normalmente 
 
 ---
 
-## 4.4. Caché
+## 5.4. Caché
 
 La CPU dispone de diferentes niveles de memoria caché, normalmente denominados:
 
@@ -101,7 +101,7 @@ Cuanto más cerca está la memoria de la CPU, normalmente menor es su capacidad 
 
 ---
 
-## 4.5. SSD y HDD
+## 5.5. SSD y HDD
 
 Son dispositivos de almacenamiento persistente.
 
@@ -129,7 +129,7 @@ En ciberseguridad es importante comprender la diferencia entre:
 
 ---
 
-## 4.6. Placa base
+## 5.6. Placa base
 
 La placa base conecta los diferentes componentes del ordenador.
 
@@ -144,7 +144,7 @@ En ella encontramos, entre otros elementos:
 
 ---
 
-## 4.7. Buses
+## 5.7. Buses
 
 Los **buses** permiten transportar información entre diferentes componentes.
 
@@ -158,7 +158,7 @@ No es necesario profundizar inicialmente en la electrónica de los buses, pero s
 
 ---
 
-## 4.8. Entrada y salida (I/O)
+## 5.8. Entrada y salida (I/O)
 
 **I/O (Input/Output)** hace referencia a las operaciones de entrada y salida de información.
 

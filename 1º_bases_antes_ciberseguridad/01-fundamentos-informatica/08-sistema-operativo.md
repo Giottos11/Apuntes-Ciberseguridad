@@ -1,4 +1,4 @@
-# 7. Sistema operativo
+# 8. Sistema operativo
 
 El **sistema operativo** actúa como intermediario entre las aplicaciones y el hardware.
 

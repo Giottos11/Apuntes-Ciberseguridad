@@ -1,10 +1,10 @@
-# 9. Memoria
+# 10. Memoria
 
 Comprender la memoria es uno de los puntos más importantes de esta base.
 
 ---
 
-## 9.1. Direcciones de memoria
+## 10.1. Direcciones de memoria
 
 La memoria puede entenderse conceptualmente como una enorme colección de posiciones identificables mediante direcciones.
 
@@ -21,7 +21,7 @@ Las direcciones suelen representarse en hexadecimal.
 
 ---
 
-## 9.2. Stack
+## 10.2. Stack
 
 El **stack (pila)** es una zona de memoria utilizada, entre otras cosas, para gestionar información asociada a las llamadas a funciones.
 
@@ -48,7 +48,7 @@ El stack será fundamental para comprender posteriormente determinadas vulnerabi
 
 ---
 
-## 9.3. Heap
+## 10.3. Heap
 
 El **heap** es una región de memoria utilizada para asignaciones dinámicas.
 
@@ -63,7 +63,7 @@ El heap también es importante para comprender vulnerabilidades relacionadas con
 
 ---
 
-## 9.4. Memoria virtual
+## 10.4. Memoria virtual
 
 Los sistemas operativos modernos utilizan **memoria virtual**.
 

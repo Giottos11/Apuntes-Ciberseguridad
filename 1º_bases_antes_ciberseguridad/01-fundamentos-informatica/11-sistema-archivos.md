@@ -1,4 +1,4 @@
-# 10. Sistema de archivos
+# 11. Sistema de archivos
 
 El sistema operativo necesita organizar los datos almacenados.
 
@@ -32,7 +32,7 @@ La estructura exacta depende del sistema operativo.
 
 ---
 
-## 10.1. Rutas
+## 11.1. Rutas
 
 Una ruta identifica la ubicación de un archivo o directorio.
 
@@ -55,7 +55,7 @@ Hay que distinguir entre:
 
 ---
 
-## 10.2. Metadatos
+## 11.2. Metadatos
 
 Los archivos no contienen únicamente su contenido.
 

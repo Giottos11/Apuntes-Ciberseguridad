@@ -1,4 +1,4 @@
-# 12. Arquitectura básica del ordenador
+# 13. Arquitectura básica del ordenador
 
 A nivel conceptual podemos representar un ordenador así:
 

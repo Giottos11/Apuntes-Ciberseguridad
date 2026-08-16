@@ -1,4 +1,4 @@
-# 5. Programas e instrucciones
+# 6. Programas e instrucciones
 
 Un programa es, simplificando, un conjunto de instrucciones que indican al ordenador qué debe hacer.
 

@@ -1,4 +1,4 @@
-# 13. Conceptos que conviene relacionar
+# 14. Conceptos que conviene relacionar
 
 No basta con estudiar cada concepto aisladamente. Lo importante es entender sus relaciones.
 

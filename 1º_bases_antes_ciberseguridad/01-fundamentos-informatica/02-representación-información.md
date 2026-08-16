@@ -1,8 +1,8 @@
-## 1. Representación de la información
+## 2. Representación de la información
 
 Los ordenadores trabajan internamente con información representada mediante **bits**.
 
-### 1.1. Bit
+### 2.1. Bit
 
 Un **bit** es la unidad mínima de información y puede tener dos valores:
 
@@ -11,7 +11,7 @@ Un **bit** es la unidad mínima de información y puede tener dos valores:
 1
 ```
 
-### 1.2. Byte
+### 2.2. Byte
 
 Un **byte** está formado por **8 bits**.
 
@@ -27,7 +27,7 @@ Con 8 bits pueden representarse:
 
 Por ejemplo, desde `00000000` hasta `11111111`.
 
-### 1.3. Unidades de información
+### 2.3. Unidades de información
 
 - bit (`b`)
 - byte (`B`)

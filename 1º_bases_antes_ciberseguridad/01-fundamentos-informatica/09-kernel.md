@@ -1,4 +1,4 @@
-# 8. Kernel
+# 9. Kernel
 
 El **kernel** es el núcleo del sistema operativo.
 

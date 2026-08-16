@@ -1,4 +1,4 @@
-# 11. Permisos y usuarios
+# 12. Permisos y usuarios
 
 Los sistemas operativos necesitan controlar **quién puede hacer qué**.
 
