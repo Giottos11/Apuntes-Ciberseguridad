@@ -41,11 +41,7 @@
 - JSON
 - Automatización
 
-### Después: C
-
-Para comprender memoria, punteros, stack, heap, estructuras, compilación y vulnerabilidades de memoria.
-
-## Nivel 3 — Git y GitHub
+### Git y GitHub
 
 - Repositorios
 - Commits
@@ -58,7 +54,11 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 
 **Objetivo:** gestionar profesionalmente el código y su historial.
 
-## Nivel 4 — Linux
+### Después: C
+
+Para comprender memoria, punteros, stack, heap, estructuras, compilación y vulnerabilidades de memoria.
+
+## Nivel 3 — Linux
 
 - Terminal
 - Usuarios y grupos
@@ -76,7 +76,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 
 **Objetivo:** trabajar con soltura desde la terminal.
 
-## Nivel 5 — Redes
+## Nivel 4 — Redes
 
 - OSI y TCP/IP
 - Ethernet y MAC
@@ -97,7 +97,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 
 **Objetivo:** comprender las comunicaciones, no memorizar puertos.
 
-## Nivel 6 — Windows y sistemas
+## Nivel 5 — Windows y sistemas
 
 ### Windows
 - Usuarios y grupos
@@ -124,7 +124,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 - Delegación
 - Privilegios
 
-## Nivel 7 — Web y backend
+## Nivel 6 — Web y backend
 
 - HTML
 - JavaScript básico
@@ -144,7 +144,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 - SQL
 - Bases de datos
 
-## Nivel 8 — Fundamentos de ciberseguridad
+## Nivel 7 — Fundamentos de ciberseguridad
 
 - Confidencialidad, integridad y disponibilidad
 - Autenticación y autorización
@@ -155,7 +155,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 - Superficie y vector de ataque
 - CVE/CVSS
 
-## Nivel 9 — Metodología de pentesting
+## Nivel 8 — Metodología de pentesting
 
 1. Reconocimiento
 2. Enumeración
@@ -170,7 +170,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 
 **Principio:** comprender primero el objetivo de una técnica y después la herramienta.
 
-## Nivel 10 — Herramientas
+## Nivel 9 — Herramientas
 
 - Nmap
 - Wireshark
@@ -184,7 +184,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 - Hashcat
 - John the Ripper
 
-## Nivel 11 — C y bajo nivel
+## Nivel 10 — C y bajo nivel
 
 - Tipos
 - Arrays
@@ -205,7 +205,7 @@ Para comprender memoria, punteros, stack, heap, estructuras, compilación y vuln
 
 Especialización: buffer overflow, ROP, shellcode y exploit development.
 
-## Nivel 12 — Criptografía
+## Nivel 11 — Criptografía
 
 - Hashes
 - SHA-2
@@ -219,7 +219,7 @@ Especialización: buffer overflow, ROP, shellcode y exploit development.
 - Certificados
 - PKI
 
-## Nivel 13 — Cloud
+## Nivel 12 — Cloud
 
 - AWS
 - Azure
@@ -228,7 +228,7 @@ Especialización: buffer overflow, ROP, shellcode y exploit development.
 - Entra ID
 - Seguridad de identidades
 
-## Nivel 14 — Especialización
+## Nivel 13 — Especialización
 
 - Red Team / Pentesting
 - Blue Team / SOC
