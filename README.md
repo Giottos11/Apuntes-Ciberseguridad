@@ -23,8 +23,29 @@ Es un repositorio abierto y cualquiera puede poner un PR para mejorarlo, corregi
 
 ## Índice
 
-1. Bases de la Ciberseguridad:
-    1. [Explicación](./1º_bases_antes_ciberseguridad/00.2ºreadme.md)
+1. [Bases de la Ciberseguridad:](./1º_bases_antes_ciberseguridad/2ºreadme.md)
+
+    0. Ciberseguridad desde 0 de verdad:
+        1. [Roadmap](./00-roadmap/1-roadmap.md)
+        2. [Conocimientos](./00-roadmap/2-puntuaciones.md)
+
+    1. Fundamentos de la informatica:
+        1. [Introducción a la informatica](./01-fundamentos-informatica/0-introduccion.md)
+
+    2. Programación:
+        1. Intro.
+
+    3. Linux:
+
+    4. Redes:
+
+    5. Windows y sistemas:
+
+    6. Arquitectura:
+
+    7. Criptografia basica:
+
+    8. Familiarización con terminos de la Ciberseguridad:
 
 
 2. Ciberseguridad:
