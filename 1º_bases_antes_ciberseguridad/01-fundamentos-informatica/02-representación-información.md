@@ -68,7 +68,7 @@ Las principales unidades utilizadas para expresar cantidades de información son
 - terabyte (TB)
 - petabyte (PB)
 
-Es importante distinguir entre bits (`b) y bytes:
+Es importante distinguir entre bits (`b`) y bytes (`B`):
 
 ```text
 1 B = 8 b
