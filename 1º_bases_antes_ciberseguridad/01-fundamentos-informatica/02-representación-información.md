@@ -1,10 +1,10 @@
 ## 2. Representación de la información
 
-Los ordenadores trabajan internamente con información representada mediante **bits**. Todo tipo de información digital —texto, imágenes, audio, vídeo, programas o instrucciones— termina siendo codificada como una secuencia de 0 y 1.
+Los ordenadores trabajan internamente con información representada mediante **bits**. Toda la información digital como —texto, imágenes, audio, vídeo, programas o instrucciones— termina siendo codificada como una secuencia de 0 y 1.
 
 El sistema binario permite que los componentes electrónicos del ordenador representen de forma sencilla dos estados diferentes, como ausencia/presencia de señal eléctrica, apagado/encendido o falso/verdadero.
 
-Comprender cómo se representa la información es fundamental para estudiar posteriormente conceptos como memoria, almacenamiento, codificación, sistema hexadecimal, direcciones de memoria, redes y análisis de datos.
+Comprender cómo se representa la información es fundamental para luego estudiar conceptos como memoria, almacenamiento, codificación, sistema hexadecimal, direcciones de memoria, redes y análisis de datos.
 
 ### 2.1. Bit
 
@@ -40,10 +40,14 @@ Por tanto, un byte puede representar 256 combinaciones distintas, desde:
 Por ejemplo, desde `00000000` hasta `11111111`.
 
 En representación decimal:
+
 ```text
 00000000 = 0
 00000001 = 1
 00000010 = 2
+00000011 = 3
+00000100 = 4
+00000101 = 5
 ...
 11111111 = 255
 ```
@@ -64,7 +68,7 @@ Las principales unidades utilizadas para expresar cantidades de información son
 - terabyte (TB)
 - petabyte (PB)
 
-Es importante distinguir entre bits y bytes:
+Es importante distinguir entre bits (`b) y bytes:
 
 ```text
 1 B = 8 b

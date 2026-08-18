@@ -2,13 +2,13 @@
 
 ## Introducción:
 
-Construir una comprensión sólida de **cómo funciona un ordenador internamente** antes de comenzar a estudiar ciberseguridad.
+La intención de este apartado es construir una comprensión sólida de **cómo funciona un ordenador por dentro** antes de comenzar a estudiar ciberseguridad.
 
-No se trata de convertirse en ingeniero de hardware ni de software, sino de comprender qué ocurre realmente cuando un programa se ejecuta: cómo el procesador interpreta y ejecuta instrucciones, cómo se representa la información, cómo se organiza y utiliza la memoria, cómo se comunican los distintos componentes y qué papel desempeña el sistema operativo como intermediario entre el hardware y el software.
+No se trata de convertirse en ingeniero de hardware, sino de entender qué ocurre realmente cuando un programa se ejecuta: cómo el procesador interpreta y ejecuta instrucciones, cómo se representa la información, cómo se organiza y utiliza la memoria, cómo se comunican los distintos componentes y qué papel desempeña el sistema operativo como intermediario entre el hardware y el software.
 
 Es importante entender conceptos como **CPU, registros, memoria RAM, almacenamiento, buses, instrucciones, procesos, memoria virtual, llamadas al sistema y arquitectura de un sistema operativo**. Estos fundamentos permitirán comprender mejor qué sucede a bajo nivel cuando una aplicación realiza una determinada operación y dónde pueden aparecer problemas de seguridad.
 
-Estos conocimientos serán especialmente importantes posteriormente para comprender:
+Estos conocimientos serán especialmente importantes para comprender ciertas cosas de ciber seguridad:
 
 * Vulnerabilidades de memoria.
 * Procesos e hilos.
