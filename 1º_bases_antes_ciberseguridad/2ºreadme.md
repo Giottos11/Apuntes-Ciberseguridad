@@ -1,8 +1,8 @@
 # Roadmap de conocimientos previos para Ciberseguridad
 
-Esta carpeta reúne una hoja de ruta para construir una base sólida antes de especializarse en ciberseguridad.
-
 ❗❗Este apartado todavia no esta terminado, si quieres aportar algo te invito a hacerlo.❗❗
+
+Esta carpeta reúne una hoja de ruta para construir una base sólida antes de especializarse en ciberseguridad, porque para aprender ciberseguridad desde 0 no puedes empezar intalando Kali Linux, esto es lo mismo que si algien quisiese ser cirujano y se compra un bisturi, primero tendra que aprender el cuerpo humano, pues en ciberseguridad es igual, tienes que aprender primero los fundamentos para despues usar herraminetas.
 
 ---
 
