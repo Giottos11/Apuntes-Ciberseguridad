@@ -1,4 +1,4 @@
-# Roadmap de Ciberseguridad — Ruta Red Team
+# Roadmap de conocimientos antes de Ciberseguridad — Ruta Red Team
 
 > **Objetivo principal:** construir una base informática sólida y progresar hasta ser capaz de comprender, evaluar y explotar sistemas de forma controlada, documentando los hallazgos profesionalmente.
 >
@@ -10,7 +10,7 @@
 
 # 0. Cómo utilizar este roadmap
 
-El roadmap no debe interpretarse como una lista de tecnologías que hay que memorizar.
+El roadmap no debe interpretarse como una lista de tecnologías que hay que memorizar, sino que conceptos que hay que saber utilizar y conocer.
 
 Cada bloque debe estudiarse siguiendo este ciclo:
 
