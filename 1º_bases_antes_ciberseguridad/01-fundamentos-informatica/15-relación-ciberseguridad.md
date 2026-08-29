@@ -1,4 +1,4 @@
-# 15. Relación con la ciberseguridad
+# 15. Relación con la ciberseguridad:
 
 | Concepto | Aparece posteriormente en |
 |---|---|
