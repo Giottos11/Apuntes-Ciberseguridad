@@ -1,4 +1,4 @@
-# Roadmap de conocimientos antes de Ciberseguridad — Ruta Red Team
+# Roadmap de conocimientos antes de Ciberseguridad — Ruta Red Team:
 
 > **Objetivo principal:** construir una base informática sólida y progresar hasta ser capaz de comprender, evaluar y explotar sistemas de forma controlada, documentando los hallazgos profesionalmente.
 >
