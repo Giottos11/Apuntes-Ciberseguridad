@@ -1,41 +1,79 @@
-# Windows y sistemas
+### Windows y sistemas
+
+Comprender la seguridad de un sistema operativo exige ir más allá del uso cotidiano de sus herramientas. Windows y Linux proporcionan mecanismos para gestionar usuarios, identidades, procesos, archivos, permisos, servicios y comunicaciones entre componentes. Estos mecanismos forman una cadena de confianza: un usuario inicia sesión, obtiene una identidad, ejecuta procesos, accede a recursos y utiliza servicios que, a su vez, funcionan con determinados privilegios. Cuando alguno de estos elementos está mal configurado, puede convertirse en una vía para elevar privilegios, acceder a información no autorizada o comprometer el sistema.
+
+Por este motivo, el estudio de Windows y Linux debe centrarse no solamente en **qué hace cada componente**, sino también en **cómo interactúan entre ellos, qué privilegios poseen y qué ocurre internamente cuando el sistema ejecuta una acción**.
 
 ## Windows
-- Usuarios
-- Grupos
-- NTFS
-- Permisos
-- Procesos
-- Servicios
-- Registro
-- DLL
-- PowerShell
-- CMD
-- UAC
-- Eventos y logs
+
+Windows basa buena parte de su modelo de seguridad en la existencia de identidades y objetos protegidos. Los usuarios representan identidades individuales y los grupos permiten agruparlas para aplicar políticas y permisos de forma colectiva. Cada cuenta posee una identidad de seguridad que el sistema utiliza para determinar qué recursos puede utilizar y qué operaciones puede realizar. Esta identidad no se limita al nombre visible de la cuenta: Windows trabaja internamente con identificadores de seguridad, conocidos como **SID (Security Identifier)**, que permiten distinguir de manera inequívoca usuarios, grupos y otras entidades de seguridad.
+
+Los **grupos** constituyen una pieza fundamental del modelo de autorización. En lugar de conceder permisos individualmente a cada usuario, Windows permite asignarlos a grupos y hacer que los miembros hereden esas capacidades. Esta separación entre identidad y autorización resulta especialmente importante en entornos empresariales, donde miles de usuarios pueden estar sujetos a diferentes niveles de acceso.
+
+El sistema de archivos **NTFS** incorpora su propio modelo de seguridad mediante las **ACL (Access Control Lists)**. Una ACL contiene entradas que determinan qué usuarios o grupos pueden realizar determinadas operaciones sobre un archivo o directorio. Entre estas operaciones se encuentran leer, escribir, modificar, ejecutar, eliminar o cambiar permisos. Es importante comprender la diferencia entre los permisos efectivos y los permisos aparentemente visibles, ya que la combinación de permisos heredados, entradas explícitas y pertenencia a grupos puede producir resultados que no son evidentes a primera vista.
+
+El modelo de permisos de Windows también introduce conceptos como **herencia**, **DACL**, **SACL**, permisos explícitos y permisos efectivos. Las DACL determinan quién puede acceder a un objeto y qué puede hacer con él, mientras que las SACL permiten definir qué accesos deben ser auditados. Comprender estas estructuras es esencial para analizar tanto configuraciones legítimas como situaciones de abuso de privilegios.
+
+Los **procesos** representan programas en ejecución y constituyen una de las estructuras fundamentales del sistema operativo. Un proceso dispone de memoria, handles, hilos, módulos cargados y un contexto de seguridad que determina con qué identidad y privilegios se ejecuta. Windows distingue además diferentes niveles de privilegio y mecanismos de aislamiento que limitan las acciones que un proceso puede realizar. Para analizar un sistema desde una perspectiva de seguridad es necesario saber identificar qué procesos existen, quién los ha iniciado, con qué cuenta funcionan, qué recursos utilizan y qué otros procesos o componentes pueden interactuar con ellos.
+
+Dentro de los procesos aparecen conceptos como **threads**, memoria virtual, handles, módulos y **DLL**. Las DLL (*Dynamic Link Libraries*) contienen código y funciones reutilizables que pueden ser cargadas por diferentes procesos. Este mecanismo es fundamental para el funcionamiento de Windows, pero también introduce una superficie de ataque relevante. La forma en que se buscan, cargan y resuelven determinadas bibliotecas puede tener implicaciones de seguridad, especialmente cuando intervienen rutas controladas por usuarios, permisos incorrectos o bibliotecas manipuladas.
+
+Los **servicios de Windows** son procesos o componentes diseñados para proporcionar funcionalidades de forma persistente, normalmente ejecutándose en segundo plano y, en muchos casos, antes de que un usuario inicie sesión. Los servicios tienen una configuración determinada, una cuenta bajo la que se ejecutan, un tipo de inicio y diferentes permisos asociados. Desde el punto de vista de administración y seguridad resulta especialmente importante comprender la relación entre un servicio, el ejecutable que utiliza, la cuenta con la que se ejecuta y los permisos que existen sobre sus archivos y configuraciones.
+
+Otro componente esencial es el **Registro de Windows**. El Registro constituye una base de datos jerárquica utilizada por Windows y por numerosas aplicaciones para almacenar configuración, preferencias y parámetros de funcionamiento. Está organizado mediante claves y valores y se encuentra dividido en diferentes *hives*. Comprender su estructura permite analizar configuraciones del sistema, mecanismos de inicio automático, asociaciones de archivos, configuración de servicios y numerosos parámetros relacionados con el comportamiento del sistema.
+
+La ejecución de determinadas acciones en Windows está condicionada además por **UAC (User Account Control)**. UAC introduce una separación entre las operaciones realizadas con privilegios normales y aquellas que requieren elevación. Comprender este mecanismo es importante porque evita interpretar erróneamente la pertenencia al grupo de administradores como equivalente a ejecutar permanentemente con privilegios administrativos. La elevación implica un cambio controlado del contexto de seguridad y está acompañada por diferentes mecanismos destinados a reducir la ejecución accidental o no autorizada de acciones privilegiadas.
+
+La administración de Windows puede realizarse mediante diferentes interfaces. **CMD** proporciona el entorno clásico de línea de comandos, mientras que **PowerShell** ofrece un entorno mucho más potente basado en objetos, cmdlets y automatización mediante scripts. PowerShell no debe entenderse simplemente como un CMD moderno: su modelo de objetos, sus módulos y su integración con componentes internos de Windows lo convierten en una herramienta fundamental tanto para administración como para análisis y automatización de tareas.
+
+Finalmente, Windows mantiene una gran cantidad de información sobre lo que sucede en el sistema mediante **eventos y registros**. El sistema de eventos permite registrar inicios de sesión, errores, creación de procesos, cambios de configuración, actividad de servicios y numerosos eventos relacionados con la seguridad. Aprender a interpretar estos registros permite reconstruir acontecimientos y entender qué ocurrió en un sistema, cuándo ocurrió y bajo qué identidad se produjo una determinada acción.
 
 ## Active Directory
-- Domain Controller
-- Dominios
-- Usuarios
-- Grupos
-- GPO
-- LDAP
-- Kerberos
-- NTLM
-- SMB
-- Relaciones de confianza
-- Delegación
-- Privilegios
+
+**Active Directory (AD)** extiende el modelo de identidad de Windows desde un único equipo hasta un entorno centralizado compuesto por usuarios, equipos, grupos y otros objetos. Su objetivo fundamental es proporcionar una infraestructura común para gestionar identidades y aplicar políticas sobre múltiples sistemas.
+
+En el centro de esta arquitectura se encuentra el **Domain Controller (DC)**. Un controlador de dominio mantiene una copia de la base de datos del directorio y participa en los procesos de autenticación y autorización dentro del dominio. El dominio proporciona un espacio lógico en el que se administran cuentas, equipos, grupos y políticas, permitiendo que una organización pueda controlar de manera centralizada una gran cantidad de sistemas.
+
+Active Directory utiliza **LDAP (Lightweight Directory Access Protocol)** para acceder y consultar información almacenada en el directorio. Esto permite trabajar con objetos organizados jerárquicamente y realizar consultas sobre usuarios, grupos, equipos y otros recursos. Comprender LDAP resulta importante porque permite entender cómo se estructura realmente el directorio y cómo los diferentes componentes consultan la información que contiene.
+
+La autenticación en Active Directory se encuentra estrechamente relacionada con **Kerberos**. Este protocolo permite demostrar la identidad de un usuario mediante un sistema basado en tickets, evitando que la contraseña tenga que transmitirse continuamente durante las operaciones posteriores. Conceptos como el **KDC**, el **TGT**, los tickets de servicio, los SPN y la delegación son fundamentales para comprender cómo funciona la autenticación en un dominio moderno.
+
+Aunque Kerberos es el mecanismo principal en muchos escenarios, Windows mantiene compatibilidad con **NTLM**, un mecanismo de autenticación más antiguo. Comprender las diferencias entre Kerberos y NTLM es especialmente importante para analizar entornos híbridos o configuraciones heredadas y para comprender determinadas técnicas de autenticación y abuso de credenciales.
+
+El protocolo **SMB (Server Message Block)** permite compartir archivos, impresoras y otros recursos a través de la red. En un dominio Windows, SMB se encuentra profundamente relacionado con la identidad y los permisos, por lo que resulta necesario comprender cómo se autentican los usuarios frente a un recurso remoto y cómo se combinan los permisos del recurso compartido con los permisos NTFS para determinar el acceso efectivo.
+
+Los **grupos de Active Directory** permiten construir modelos de autorización complejos. Un usuario puede pertenecer directa o indirectamente a diferentes grupos, y estos grupos pueden poseer permisos sobre sistemas, recursos compartidos, aplicaciones u otros objetos. Por esta razón, analizar únicamente los grupos a los que pertenece directamente un usuario no siempre es suficiente: es necesario comprender la pertenencia transitiva y la relación entre grupos, permisos y privilegios.
+
+Las **GPO (Group Policy Objects)** permiten aplicar configuraciones de forma centralizada sobre usuarios y equipos. Mediante ellas pueden establecerse políticas de contraseña, restricciones de seguridad, configuración del sistema, reglas de firewall, despliegue de software, configuraciones de PowerShell y numerosos parámetros adicionales. Las GPO también requieren comprender conceptos como **OU**, herencia, precedencia, filtrado de seguridad y procesamiento de políticas.
+
+A medida que una infraestructura crece aparecen diferentes dominios, bosques y estructuras administrativas. Las **relaciones de confianza** permiten establecer relaciones de autenticación entre dominios o bosques. Comprender su funcionamiento es importante porque una relación de confianza puede ampliar el alcance de determinadas identidades y, por tanto, modificar las fronteras de seguridad que aparentemente existen entre diferentes partes de una infraestructura.
+
+Otro concepto fundamental es la **delegación**. Active Directory permite delegar determinadas tareas administrativas sin proporcionar necesariamente privilegios administrativos completos. Esta capacidad es esencial para construir una administración granular, pero una delegación incorrecta puede provocar que una identidad aparentemente limitada disponga indirectamente de capacidades mucho mayores.
+
+El estudio de Active Directory debe culminar con la comprensión de los **privilegios y relaciones de confianza entre objetos**. No basta con saber qué permisos tiene un usuario directamente. Es necesario analizar las rutas que conectan identidades, grupos, equipos, servicios, ACL, GPO y relaciones de confianza. En un entorno complejo, la seguridad efectiva de una cuenta depende de toda esa cadena.
 
 ## Linux avanzado
-- ELF
-- Capabilities
-- PAM
-- Syscalls
-- Procfs
-- Device files
+
+El estudio de Linux permite observar muchos de estos mismos conceptos desde una arquitectura diferente. Mientras que Windows utiliza estructuras como el Registro, Active Directory y los tokens de seguridad, Linux se apoya en mecanismos como usuarios y grupos, permisos del sistema de archivos, procesos, capacidades, PAM y las interfaces proporcionadas por el kernel.
+
+Para comprender Linux a un nivel avanzado es necesario conocer el formato **ELF (Executable and Linkable Format)**. ELF es el formato utilizado habitualmente para ejecutables, objetos compartidos y otros binarios en sistemas Linux. Comprender su estructura permite relacionar un archivo ejecutable con sus segmentos, secciones, símbolos, dependencias dinámicas y proceso de carga en memoria. Esto proporciona una visión mucho más profunda de qué ocurre cuando el sistema ejecuta un programa.
+
+Las **capabilities** dividen determinados privilegios tradicionalmente asociados al usuario root en capacidades más específicas. Esto permite que un proceso pueda recibir una capacidad concreta sin tener necesariamente todos los privilegios de root. El modelo es especialmente relevante para comprender configuraciones modernas de seguridad y analizar por qué determinados procesos pueden realizar operaciones privilegiadas.
+
+**PAM (Pluggable Authentication Modules)** proporciona una arquitectura modular para la autenticación en Linux. En lugar de que cada aplicación implemente completamente su propio sistema de autenticación, PAM permite integrar diferentes módulos que controlan aspectos como autenticación, autorización, gestión de cuentas y establecimiento de sesiones. Comprender PAM permite seguir el recorrido que realiza una autenticación desde la aplicación hasta los mecanismos responsables de validar al usuario.
+
+Los **syscalls** constituyen la interfaz mediante la cual los programas solicitan servicios al kernel. Un programa en espacio de usuario no puede realizar directamente determinadas operaciones privilegiadas, por lo que utiliza llamadas al sistema para solicitar al kernel operaciones como abrir archivos, crear procesos, modificar memoria o comunicarse con otros procesos. El estudio de los syscalls proporciona una conexión directa entre el código ejecutado por una aplicación y las operaciones que finalmente realiza el sistema operativo.
+
+Linux expone además una gran cantidad de información interna mediante **procfs**, normalmente accesible a través de `/proc`. Esta interfaz virtual proporciona información sobre procesos, memoria, dispositivos, configuración del kernel y otros elementos internos. Analizar `/proc` permite observar el estado del sistema desde una perspectiva mucho más cercana al kernel que las herramientas tradicionales de administración.
+
+Los **device files** representan otra característica fundamental de Unix y Linux. Muchos dispositivos se presentan al espacio de usuario mediante archivos especiales, permitiendo que las aplicaciones interactúen con ellos utilizando interfaces coherentes con el modelo de archivos. Comprender esta abstracción resulta necesario para entender la arquitectura de dispositivos, permisos y comunicación entre espacio de usuario y kernel.
 
 ## Objetivo
 
-Comprender sistemas Windows y Linux y sus mecanismos de identidad, procesos, permisos y servicios.
+El objetivo de este bloque es construir una comprensión sólida del funcionamiento interno de **Windows, Active Directory y Linux**, pasando progresivamente desde la administración básica hasta los mecanismos internos del sistema operativo.
+
+No se trata únicamente de aprender comandos. La finalidad es comprender el **modelo de identidad, autenticación, autorización y ejecución** que existe detrás de cada sistema. Un usuario debe poder analizar qué identidad está actuando, qué proceso está realizando una operación, con qué privilegios se ejecuta, qué recurso intenta utilizar, qué mecanismo decide si tiene permiso y qué evidencias quedan registradas.
+
+A partir de esta base será posible interpretar sistemas Windows y Linux desde una perspectiva de administración, troubleshooting y seguridad. Conceptos aparentemente independientes —usuarios, grupos, ACL, procesos, servicios, autenticación, GPO, Kerberos, capabilities o syscalls— comienzan entonces a formar un único modelo mental: **una cadena en la que una identidad obtiene un contexto de seguridad, inicia o interactúa con procesos, accede a recursos mediante determinados mecanismos y queda limitada por las políticas y controles establecidos por el sistema**.
+
+Esta comprensión constituye la base necesaria para avanzar posteriormente hacia el análisis de sistemas, hardening, detección, análisis forense, seguridad de Active Directory, escalada de privilegios y análisis de comportamiento a nivel de sistema operativo.
